@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('pexels-steve-johnson-1509534.jpg');
+    background-size: 100%;
+}
+nav{
+   
+    background-color: rgba(236, 75, 35, 0.849);
+    display: flex;
+    text-align: center;
+    justify-content: space-around;  
+
+}
+
+.manu-line{
+    width: 40px;
+    height: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:rgb(105, 238, 255);
+   
+}
+.line{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    cursor: pointer;
+    display: none;
+}
+.name{
+    font-size: 40px;
+    font-weight: bolder;
+    align-self: center;
+
+}
+li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 25px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(105, 238, 255);
+}
+nav ul{
+    margin-left:30%;
+
+}
+nav a:hover{
+    color:rgb(245, 241, 248);
+}
+
+
+
+
+@media all and (max-width:800px) {
+    nav{
+        flex-direction: column;
+
+    }
+    .name{
+        align-self: self-start;
+        margin: 10px 0px 0px 20px;
+    }
+
+    nav li{
+        display: block;   
+    }
+    nav ul{
+        text-align: center;
+        margin: 0px ;
+        padding: 0px;
+        display: none;
+    }
+    .line{
+        display: block;
+        top:10px;
+    }     
+    
+}
+.show{
+    display: block;
+}

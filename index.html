@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contant">
+        <nav>
+            <div class="name">
+                <a href="">Skills!</a>
+            </div>
+
+            <ul class="option">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Survices</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="line">
+                <div class="manu-line"></div>
+                <div class="manu-line"></div>
+                <div class="manu-line"></div>
+            </div>
+        </nav>
+    </div>
+    
+    <script>
+       const line=document.querySelector('.line') 
+       const menu=document.querySelector('nav ul')
+       line.addEventListener('click',()=>{
+        menu.classList.toggle('show')
+       })
+    </script>
+</body>
+</html>
